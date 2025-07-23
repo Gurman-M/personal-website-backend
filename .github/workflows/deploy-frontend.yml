@@ -28,7 +28,7 @@ jobs:
 
     defaults:
       run:
-        working-directory: frontend
+        working-directory: frontend/gurman-mundi-website
 
     steps:
       - name: Checkout repository code
