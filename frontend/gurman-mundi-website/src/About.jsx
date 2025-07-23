@@ -21,6 +21,8 @@ function About() {
                     <br /><br /><br />
 
                     I hope you stick around and check out some of the things here!
+
+                    TEST MESSAGE!
             </p>
         </div>
     );
