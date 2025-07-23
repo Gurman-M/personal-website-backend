@@ -16,6 +16,7 @@ def lambda_handler(event, context):
 
     # Retrieve the new value
     visitors = response['Attributes']['Visits']
+    visitors = int(visitors) * 100000
 
     return {
         'statusCode': 200,
