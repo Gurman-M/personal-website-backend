@@ -28,14 +28,6 @@ jobs:
 
       # Run Pytests
 
-      # Install AWS CLI?
-
-      # aws sso login --profile myProfile
-
-      # Terraform plan
-
-      # Terraform apply
-
   deploy:
     name: Deploy
     runs-on: ubuntu-latest
