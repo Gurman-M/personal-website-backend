@@ -34,8 +34,17 @@ jobs:
       - name: Checkout
         uses: actions/checkout@v4
 
-      - name: List frontend folder contents
-        run: ls -la frontend
+      - name: Show current directory
+        run: pwd
+
+      - name: List root files
+        run: ls -la
+
+      - name: List .github folder
+        run: ls -la .github
+
+      - name: List all recursively
+        run: ls -laR
 
       # Install npm dependencies, cache them correctly
       # and run all Cypress tests
