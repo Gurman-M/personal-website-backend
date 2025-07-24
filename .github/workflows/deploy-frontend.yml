@@ -40,9 +40,6 @@ jobs:
       - name: List root files
         run: ls -la
 
-      - name: List .github folder
-        run: ls -la .github
-
       - name: List all recursively
         run: ls -laR
 
