@@ -26,23 +26,24 @@ jobs:
   tests:
     runs-on: ubuntu-latest
 
+    defaults:
+      run:
+        working-directory: frontend/
+
     steps:
       - name: Checkout
         uses: actions/checkout@v4
 
-      - name: Install dependencies
-        run: npm ci
-        working-directory: frontend
+      - name: List frontend folder contents
+        run: ls -la frontend
 
-      - name: Build frontend
-        run: npm run build
-        working-directory: frontend
-
+      # Install npm dependencies, cache them correctly
+      # and run all Cypress tests
       - name: Cypress run
         uses: cypress-io/github-action@v6
         with:
-          build: npm run build --prefix frontend
-          start: npm start --prefix frontend
+          build: npm run build
+          start: npm start
 
   deploy:
     runs-on: ubuntu-latest
