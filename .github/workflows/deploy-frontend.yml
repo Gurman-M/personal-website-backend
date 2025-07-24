@@ -23,6 +23,24 @@ permissions:
   contents: read
 
 jobs:
+  tests:
+    runs-on: ubuntu-latest
+
+    defaults:
+      run:
+        working-directory: frontend/
+
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+      # Install npm dependencies, cache them correctly
+      # and run all Cypress tests
+      - name: Cypress run
+        uses: cypress-io/github-action@v6
+        with:
+          build: npm run build
+          start: npm start
+
   deploy:
     runs-on: ubuntu-latest
 
@@ -44,8 +62,6 @@ jobs:
 
       - name: Build frontend
         run: npm run build
-
-      # Run Cypress Tests
 
       - name: configure aws credentials
         uses: aws-actions/configure-aws-credentials@v3
