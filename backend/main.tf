@@ -252,7 +252,7 @@ resource "aws_apigatewayv2_api" "website_http_api" {
   protocol_type = "HTTP"
 
   cors_configuration {
-    allow_origins  = ["https://${aws_cloudfront_distribution.s3_distribution.domain_name}"]
+    allow_origins  = ["https://${aws_cloudfront_distribution.s3_distribution.domain_name}", "http://localhost:5173"]
     allow_methods  = ["POST"]
     allow_headers  = ["Content-Type"]
     expose_headers = []
