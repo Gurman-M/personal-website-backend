@@ -1,28 +1,23 @@
 import ProjectListItem from "./ProjectListItem"
-import guessing from "/src/assets/images/guessing-game-thumbnail.png"
-import pointillism from "/src/assets/images/pointillism-thumbnail.png"
-import calculator from "/src/assets/images/budgeting-calc-thumbnail.png"
-import wolfHacks from "/src/assets/images/wolf-hacks-thumbnail.png"
+import stock_chart from "/src/assets/images/stock-chart.png"
+import cloud from "/src/assets/images/crc.png"
+import http_server from "/src/assets/images/http_server.png"
 import "./styles/styles.css"
 
 function ProjectList() {
     return (
         <ul className="flex-container w3-center">
-            {/* Guessing Game Project */}
-            <ProjectListItem link="https://github.com/Gurman-M/guessing-game" imgSrc={guessing} alt="guessing game project" 
-                caption="A basic game I have created in C++. Try to get the right number in a range of 0 to 251!"/>
+            {/* Stock Strategy Simulator */}
+            <ProjectListItem link="https://github.com/Gurman-M/Stock-Strategy-Simulator" imgSrc={stock_chart} alt="stock simulator project" 
+                caption="This app tests four different investing strategies and evaluates which strategies are successful in the market."/>
             
-            {/* Pointillism Project */}
-            <ProjectListItem link="https://github.com/Gurman-M/Pointillism-Project" imgSrc={pointillism} alt="pointillism project" 
-                caption="This program attempts to recreate images using the pointillism drawing technique."/>
+            {/* Cloud Resume Site */}
+            <ProjectListItem link="https://github.com/Gurman-M/cloud-personal-website" imgSrc={cloud} alt="cloud resume site project" 
+                caption="This project aims to host my personal website on AWS. The idea for this project is based off the Cloud Resume Challenge."/>
 
-            {/* Budgeting Calculator Project */}
-            <ProjectListItem link="https://github.com/Gurman-M/SmartFinancialBudgeting/blob/main/application/Main.java" imgSrc={calculator} 
-                alt="budgeting calculator" caption="Users can calculate an estimate of where their annual earnings can be spent wisely."/>
-
-            {/* Wolf Hacks Project */}
-            <ProjectListItem link="https://github.com/Gurman-M/Wolf-Hacks" imgSrc={wolfHacks} alt="wolf hacks project" 
-                caption="Interactive games using Augmented Reality. A submission for Wolf Hacks 2020."/>
+            {/* HTTP Server C */}
+            <ProjectListItem link="https://github.com/Gurman-M/http-server-c" imgSrc={http_server} 
+                alt="http server" caption="HTTP server in C tested with Docker clients, handling sockets, parsing requests, and serving responses."/>
         </ul>
     );
 }

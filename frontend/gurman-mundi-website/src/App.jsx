@@ -19,7 +19,7 @@ function App() {
             <Route path="/" element={<Home />} />
             <Route path="/projects" element={<Projects />} />
             <Route path="/competitive" element={<Competitive />} />
-            <Route path="/resume" element={<Resume />} />
+            {/* <Route path="/resume" element={<Resume />} /> */}
 
             {/* Nothing matched, re-direct unknown requests to home */}
             {/* Replace will ensure if the user tries to go back by clicking back button, it will go back to last valid page, broken links won't be revisited */}

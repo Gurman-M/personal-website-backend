@@ -43,7 +43,7 @@ function Navbar() {
                         <HashLink smooth to="/#about" className="w3-bar-item w3-button" style={{fontFamily: "pixel-title-font"}}><font size={"5"}>ABOUT</font></HashLink>
                         <NavbarItem link="/projects" name="PROJECTS" fontName="pixel-title-font" />
                         <NavbarItem link="/competitive" name="COMPETITIVE PROGRAMMING" fontName="pixel-title-font" />
-                        <NavbarItem link="/resume" name="RESUME" fontName="pixel-title-font" />
+                        {/* <NavbarItem link="/resume" name="RESUME" fontName="pixel-title-font" /> */}
                     </div>
                     {/* Hide right-floated links on small screens and replace them with a menu icon */}
                     <button className="w3-bar-item w3-button w3-right w3-hide-large w3-hide-medium" onClick={toggleVisibility}>
@@ -56,7 +56,7 @@ function Navbar() {
                     <HashLink smooth to="/#about" className="w3-bar-item w3-button" style={{fontFamily: "'Archivo Black', sans-serif"}}><font size={"4"}>ABOUT ME</font></HashLink>
                     <NavbarItem link="/projects" name="PROJECTS" fontName="'Archivo Black', sans-serif" fontSize="4" />
                     <NavbarItem link="/competitive" name="COMPETITIVE PROGRAMMING" fontName="'Archivo Black', sans-serif" fontSize="4" />
-                    <NavbarItem link="/resume" name="RESUME" fontName="'Archivo Black', sans-serif" fontSize="4" />
+                    {/* <NavbarItem link="/resume" name="RESUME" fontName="'Archivo Black', sans-serif" fontSize="4" /> */}
                 </nav>
             </div>
         </header>
